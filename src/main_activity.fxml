@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" stylesheets="@res/style.css"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <fx:define>
+        <Image fx:id="upImage" url="@res/up.png"/>
+        <Image fx:id="downImage" url="@res/down.png"/>
+    </fx:define>
+    <HBox prefHeight="400.0" prefWidth="800.0">
+        <AnchorPane prefHeight="400.0" prefWidth="300.0">
+            <Button fx:id="liftOneInSeven" layoutX="228.0" layoutY="70.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="7"/>
+            <Button fx:id="liftOneInSix" layoutX="228.0" layoutY="106.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="6"/>
+            <Button fx:id="liftOneInFive" layoutX="228.0" layoutY="142.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="5"/>
+            <Button fx:id="liftOneInFour" layoutX="228.0" layoutY="178.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="4"/>
+            <Button fx:id="liftOneInThree" layoutX="228.0" layoutY="214.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="3"/>
+            <Button fx:id="liftOneInTwo" layoutX="228.0" layoutY="250.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="2"/>
+            <Button fx:id="liftOneInOne" layoutX="228.0" layoutY="286.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="1"/>
+            <Button fx:id="liftOneInZero" layoutX="228.0" layoutY="322.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="0"/>
+            <ImageView fitHeight="277.0" fitWidth="177.0" layoutX="34.0" layoutY="70.0" pickOnBounds="true"
+                       preserveRatio="true" AnchorPane.leftAnchor="34.0">
+                <Image url="@res/liftBackground.png"/>
+            </ImageView>
+            <ImageView fx:id="liftOneLeftGate" fitHeight="277.0" fitWidth="89.0" layoutX="34.0" layoutY="70.0"
+                       pickOnBounds="true">
+                <Image url="@res/gate.png"/>
+            </ImageView>
+            <ImageView fx:id="liftOneRightGate" fitHeight="277.0" fitWidth="89.0" layoutX="122.0" layoutY="70.0"
+                       pickOnBounds="true">
+                <Image url="@res/gate.png"/>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#51ea3c" height="26.0" layoutX="102.0" layoutY="35.0"
+                       stroke="BLACK" strokeType="INSIDE" width="54.0"/>
+            <Label fx:id="liftOneLabel" layoutX="118.0" layoutY="39.0" text="0"/>
+            <ImageView fx:id="liftOneDirection" fitHeight="12.0" fitWidth="12.0" layoutX="138.0" layoutY="42.0"
+                       pickOnBounds="true"/>
+        </AnchorPane>
+        <AnchorPane prefHeight="400.0" prefWidth="300.0">
+            <Button fx:id="liftTwoInSeven" layoutX="228.0" layoutY="70.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="7"/>
+            <Button fx:id="liftTwoInSix" layoutX="228.0" layoutY="106.0" mnemonicParsing="false" prefHeight="26.0"
+                    prefWidth="23.0" styleClass="unselected-button" text="6"/>
+            <Button fx:id="liftTwoInFive" layoutX="228.0" layoutY="142.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="5"/>
+            <Button fx:id="liftTwoInFour" layoutX="228.0" layoutY="178.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="4"/>
+            <Button fx:id="liftTwoInThree" layoutX="228.0" layoutY="214.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="3"/>
+            <Button fx:id="liftTwoInTwo" layoutX="228.0" layoutY="250.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="2"/>
+            <Button fx:id="liftTwoInOne" layoutX="228.0" layoutY="286.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="1"/>
+            <Button fx:id="liftTwoInZero" layoutX="228.0" layoutY="322.0" mnemonicParsing="false"
+                    styleClass="unselected-button" text="0"/>
+            <ImageView fitHeight="277.0" fitWidth="177.0" layoutX="34.0" layoutY="70.0" pickOnBounds="true"
+                       preserveRatio="true">
+                <Image url="@res/liftBackground.png"/>
+            </ImageView>
+            <ImageView fx:id="liftTwoLeftGate" fitHeight="277.0" fitWidth="89.0" layoutX="34.0" layoutY="70.0"
+                       pickOnBounds="true">
+                <Image url="@res/gate.png"/>
+            </ImageView>
+            <ImageView fx:id="liftTwoRightGate" fitHeight="277.0" fitWidth="89.0" layoutX="122.0" layoutY="70.0"
+                       pickOnBounds="true">
+                <Image url="@res/gate.png"/>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#51ea3c" height="26.0" layoutX="91.0" layoutY="36.0"
+                       stroke="BLACK" strokeType="INSIDE" width="54.0"/>
+            <Label fx:id="liftTwoLabel" layoutX="111.0" layoutY="40.0" text="0"/>
+            <ImageView fx:id="liftTwoDirection" fitHeight="12.0" fitWidth="12.0" layoutX="123.0" layoutY="43.0"
+                       pickOnBounds="true"/>
+        </AnchorPane>
+        <AnchorPane prefHeight="400.0" prefWidth="200.0">
+            <Button fx:id="sevenDown" layoutX="50.0" layoutY="70.0" mnemonicParsing="false"
+                    styleClass="outside-unselected-button">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" image="$downImage"/>
+                </graphic>
+            </Button>
+            <Button fx:id="sixUp" layoutX="26.0" layoutY="106.0" mnemonicParsing="false"
+                    styleClass="outside-unselected-button">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" image="$upImage"/>
+                </graphic>
+            </Button>
+            <Button fx:id="sixDown" layoutX="74.0" layoutY="106.0" mnemonicParsing="false"
+                    styleClass="outside-unselected-button">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" image="$downImage"/>
+                </graphic>
+            </Button>
+            <Button fx:id="fiveUp" layoutX="26.0" layoutY="142.0" mnemonicParsing="false"
+                    styleClass="outside-unselected-button">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" image="$upImage"/>
+                </graphic>
+            </Button>
+            <Button fx:id="fiveDown" layoutX="74.0" layoutY="142.0" mnemonicParsing="false"
+                    styleClass="outside-unselected-button">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" image="$downImage"/>
+                </graphic>
+            </Button>
+            <Button fx:id="fourUp" layoutX="26.0" layoutY="178.0" mnemonicParsing="false"
+                    styleClass="outside-unselected-button">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" image="$upImage"/>
+                </graphic>
+            </Button>
+            <Button fx:id="fourDown" layoutX="74.0" layoutY="178.0" mnemonicParsing="false"
+                    styleClass="outside-unselected-button">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" image="$downImage"/>
+                </graphic>
+            </Button>
+            <Button fx:id="threeUp" layoutX="26.0" layoutY="214.0" mnemonicParsing="false"
+                    styleClass="outside-unselected-button">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" image="$upImage"/>
+                </graphic>
+            </Button>
+            <Button fx:id="threeDown" layoutX="74.0" layoutY="214.0" mnemonicParsing="false"
+                    styleClass="outside-unselected-button">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" image="$downImage"/>
+                </graphic>
+            </Button>
+            <Button fx:id="twoUp" layoutX="26.0" layoutY="250.0" mnemonicParsing="false"
+                    styleClass="outside-unselected-button">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" image="$upImage"/>
+                </graphic>
+            </Button>
+            <Button fx:id="twoDown" layoutX="74.0" layoutY="250.0" mnemonicParsing="false"
+                    styleClass="outside-unselected-button">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" image="$downImage"/>
+                </graphic>
+            </Button>
+            <Button fx:id="oneUp" layoutX="26.0" layoutY="286.0" mnemonicParsing="false"
+                    styleClass="outside-unselected-button">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" image="$upImage"/>
+                </graphic>
+            </Button>
+            <Button fx:id="oneDown" layoutX="74.0" layoutY="286.0" mnemonicParsing="false"
+                    styleClass="outside-unselected-button">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" image="$downImage"/>
+                </graphic>
+            </Button>
+            <Button fx:id="zeroUp" layoutX="50.0" layoutY="322.0" mnemonicParsing="false"
+                    styleClass="outside-unselected-button">
+                <graphic>
+                    <ImageView fitHeight="20.0" fitWidth="20.0" image="$upImage"/>
+                </graphic>
+            </Button>
+            <Label layoutX="148.0" layoutY="70.0" text="7"/>
+            <Label layoutX="148.0" layoutY="106.0" text="6"/>
+            <Label layoutX="148.0" layoutY="142.0" text="5"/>
+            <Label layoutX="148.0" layoutY="178.0" text="4"/>
+            <Label layoutX="148.0" layoutY="214.0" text="3"/>
+            <Label layoutX="148.0" layoutY="250.0" text="2"/>
+            <Label layoutX="148.0" layoutY="286.0" text="1"/>
+            <Label layoutX="148.0" layoutY="322.0" text="0"/>
+
+        </AnchorPane>
+    </HBox>
+</AnchorPane>

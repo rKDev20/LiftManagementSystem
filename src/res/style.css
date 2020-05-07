@@ -1,0 +1,35 @@
+.unselected-button {
+  -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+  -fx-background-color: #e7e7e7;
+  -fx-text-align: center;
+  -fx-border: 3px;
+  -fx-border-color: #000000;
+ }
+.selected-button {
+     -fx-border-radius: 50%;
+     -fx-background-radius: 50%;
+
+       -fx-background-color: #71ceea;
+     -fx-text-align: center;
+    -fx-border: 3px;
+    -fx-border-color: #000000;
+ }
+ .outside-selected-button{
+    -fx-background-radius: 50%;
+    -fx-background-color: #71ceea;
+     -fx-pref-width:28px;
+         -fx-pref-height:28px;
+    -fx-border-radius: 50%;
+    -fx-border: 3px;
+    -fx-border-color: #000000;
+ }
+ .outside-unselected-button{
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+     -fx-pref-width:28px;
+         -fx-pref-height:28px;
+    -fx-background-color: #e7e7e7;
+    -fx-border: 3px;
+    -fx-border-color: #000000;
+ }
